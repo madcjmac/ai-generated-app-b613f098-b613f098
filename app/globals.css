@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --primary: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --primary: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.glass-morphism {
+  @apply bg-opacity-20 backdrop-blur-lg bg-white dark:bg-black border border-opacity-20 border-white dark:border-gray-800;
+}
